@@ -55,8 +55,8 @@ int *swap_unsorted(int *array_int, size_t len)
 	size_t i = 0;
 	int tmp = 0;
 	int swapped = 0;
-	do
-	{
+
+	do {
 		swapped = 0;
 		for (i = 0; i < len - 1; i++)
 		{
@@ -69,7 +69,6 @@ int *swap_unsorted(int *array_int, size_t len)
 			}
 			print_array(array_int, len);
 		}
-	}
-	while (swapped);
+	} while (swapped);
 	return (array_int);
 }
