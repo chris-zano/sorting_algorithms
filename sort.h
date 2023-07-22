@@ -30,6 +30,6 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 int count_unsorted(int *array_int, size_t len);
 int *swap_unsorted(int *array_int, size_t len);
-
+void insertion_sort_list(listint_t **list);
 
 #endif /* SORT_H */
