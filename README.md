@@ -1,8 +1,8 @@
 # 0x1B. C - Sorting algorithms & Big O
 
-Resources
+## Resources
 
-Read or watch:
+### ___Read or watch:___
 
 * [Sorting algorithm](https://intranet.alxswe.com/rltoken/-j5MKLBlzZAC2RfJ5DTBIg)
 * [Big O notation](https://intranet.alxswe.com/rltoken/WRvrE2BaNVQFssHiUATTrw)
