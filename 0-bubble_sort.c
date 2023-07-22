@@ -52,23 +52,23 @@ int count_unsorted(int *array_int, size_t len)
 
 int *swap_unsorted(int *array_int, size_t len)
 {
-	size_t i = 0;
-	int tmp = 0;
-	int swapped = 0;
+	size_t j, i;
+	int n;
 
-	do {
-		swapped = 0;
-		for (i = 0; i < len - 1; i++)
+	if (len < 2)
+		return (NULL);
+	for (i = 0; i < len - 1; i++)
+	{
+		for (j = 0; j < len - i - 1; j++)
 		{
-			if (array_int[i] > array_int[i + 1])
+			if (array_int[j] > array_int[j + 1])
 			{
-				tmp = array_int[i];
-				array_int[i] = array_int[i + 1];
-				array_int[i + 1] = tmp;
-				swapped = 1;
+				n = array_int[j];
+				array_int[j] = array_int[j + 1];
+				array_int[j + 1] = n;
+				print_array(array_int, len);
 			}
-			print_array(array_int, len);
 		}
-	} while (swapped);
+	}
 	return (array_int);
 }
