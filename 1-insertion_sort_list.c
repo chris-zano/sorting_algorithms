@@ -13,7 +13,7 @@ void swap(listint_t *a, listint_t *b, listint_t **head)
 		return;
 	aux1 = a->prev;
 	aux2 = b->next;
-	/* if nodes are adjacent*/
+
 	if (aux1)
 		aux1->next = b;
 	if (aux2)
@@ -25,6 +25,7 @@ void swap(listint_t *a, listint_t *b, listint_t **head)
 	if (aux1 == NULL)
 		*head = b;
 }
+
 /**
  * insertion_sort_list  - insertion_sort_list
  * @list: doubly liked list
