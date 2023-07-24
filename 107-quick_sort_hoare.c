@@ -9,6 +9,7 @@
  *
  * Return: void
  */
+
 void swap(int *array, size_t size, int *a, int *b)
 {
 	if (*a != *b)
@@ -29,6 +30,7 @@ void swap(int *array, size_t size, int *a, int *b)
  *
  * Return: void
  */
+
 size_t hoare_partition(int *array, ssize_t size, ssize_t lo, ssize_t hi)
 {
 	ssize_t i = lo - 1, j = hi + 1;
@@ -57,6 +59,7 @@ size_t hoare_partition(int *array, ssize_t size, ssize_t lo, ssize_t hi)
  *
  * Return: void
  */
+
 void quicksort(int *array, size_t size, ssize_t lo, ssize_t hi)
 {
 	if (lo < hi)
@@ -75,6 +78,7 @@ void quicksort(int *array, size_t size, ssize_t lo, ssize_t hi)
  *
  * Return: void
  */
+
 void quick_sort_hoare(int *array, size_t size)
 {
 	if (!array || size < 2)
